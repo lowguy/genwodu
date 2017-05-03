@@ -1,18 +1,33 @@
 <!--pages/blog/index.wxml-->
 <view class="container">
-    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/php.png"></image></view>
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/python.png"></image></view>
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/html.png"></image></view>
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/java.png"></image></view>
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/js.png"></image></view>
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/js.png"></image></view>
-        <view class="scroll-view-item_H cate"><image src="../../image/icon/js.png"></image></view>
-    </scroll-view>
     <view class="section">
-        <view class="item" wx:for="{{blog}}">
-            <view class="img"><image src="{{item.thumb}}"></image></view>
-            <view class="title">{{item.title}}</view>
+        <view class="item" wx:for="{{blog}}" wx:key="index">
+            <view class="content">
+                <view class="user-info">
+                    <view class="left">
+                        <view class="avatar" bindtap="caidan" data-id="{{item.id}}">
+                            <image src="{{item.thumb}}" ></image>
+                        </view>
+                        <view class="user">
+                            <text class="name">{{item.author}}</text>
+                            <text class="time">{{item.create_time}}</text>
+                        </view>
+                    </view>
+                    <view class="right">
+                        <image src="../../image/icon/action.png"></image>
+                    </view>
+                </view>
+                <view class="img"><image src="{{item.thumb}}"></image></view>
+                <view class="brief">{{item.brief}}</view>
+                <view class="action">
+                    <view class="left">
+                        
+                    </view>
+                    <view class="right">
+                        <image src="../../image/icon/like.png"></image>
+                    </view>
+                </view>
+            </view>
         </view>
     </view>
 </view>

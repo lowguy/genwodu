@@ -5,6 +5,10 @@ Page({
     apiUrl:'https://890vip.cn',
     blog:[]
   },
+  caidan:function(e){
+    console.log(890)
+    
+  },
   onLoad:function(options){
     var that = this
     wx.request({

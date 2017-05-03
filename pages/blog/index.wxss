@@ -24,25 +24,114 @@
 .item{
     display: block;
     width:100%;
-    height:12rem;
+    height:17.5rem;
     text-align: center;
     background-color: #fff;
     margin: 0.7rem 0;
     border: 0.1rem solid #efefef;
     box-shadow: 0rem 0.3rem 0.6rem #efefef;
 }
+.item .content{
+    margin: 0.5rem;
+}
+.content>view{
+    display: block;
+}
+.user-info{
+    display: block;
+    height: 2.5rem;
+}
+.user-info .left{
+    display: inline-block;
+    width:60%;
+    height:2.5rem;
+    left: 0;
+    float: left;
+    text-align: left;
+}
+.user-info .right{
+    display: inline-block;
+    width:40%;
+    height:2.5rem;
+    right: 0;
+    float: right;
+    text-align: right;
+}
+.user-info .left .avatar{
+    display: inline-block;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.user-info .left .avatar image{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.user-info .left .user{
+    display: inline-block;
+    float: left;
+    margin-left: 0.8rem;
+    min-width: 3rem;
+    height: 2.5rem;
+}
+.user-info .left .user text{
+    display: block;
+}
+.user-info .left .user .name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+.user-info .left .user .time{
+    font-size: 0.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    color: #888;
+}
+.user-info .right image{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.5rem;
+}
 .item .img{
     width:100%;
     height: 8rem;
+    margin: 0.8rem 0;
 }
 .item .img image{
     width: 100%;
     height: 8rem;
+    border-radius: 0.2rem;
 }
-.item .title{
-    margin-top: 1rem;
+.item .brief{
     display: block;
-    height: 2rem;
-    line-height: 2rem;
-    overflow: hidden
+    font-size: 0.8rem;
+    color: #888;
+    text-align: left;
+    height: 2.4rem;
+    line-height: 1.2rem;
+    overflow: hidden;
+}
+.action{
+    display: block;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+}
+.action .left{
+    display: inline-block;
+    float: left;
+    height: 1.5rem;
+}
+
+.action .right{
+    display: inline-block;
+    float: right;
+    height: 1.5rem;
+}
+
+.action .right image{
+    height: 1rem;
+    width:1rem;
 }

@@ -11,6 +11,7 @@
   height: 2.1rem;
   line-height: 2.1rem;
   border-radius: 0;
+  background-color: #27c79a;
 }
 .flex-item{
   float: left;

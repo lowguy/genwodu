@@ -1,25 +1,4 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="section">
-    <input class="search-input"  maxlength="10" placeholder="{{search_palceholder}}" /><button type="primary" class="search-btn" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="primary" > {{ primary }}</button>
-  </view>
-  <view class="section">
-    <view class="flex-wrp" style="flex-direction:row;">
-
-      <view class="flex-item" wx:for="{{recommend}}" bindtap="detail" data-id="{{item.id}}">
-        <view class="flex-content">
-          <view class="flex-img">
-            <image src="{{item.thumb}}"></image>  
-          </view>
-          <label class="flex-title">{{item.title}}</label>
-          <view class="flex-info">
-            <label class="flex-time">{{item.create_time}}</label>
-            <label class="flex-user">{{item.author}}</label>
-          </view>
-        </view>
-      </view>
-      
-    </view>
-  </view>
+  
 </view>
