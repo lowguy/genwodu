@@ -1,0 +1,47 @@
+/* pages/my/index.wxss */
+.container{
+    padding: 2rem 0;
+}
+.section{
+    box-shadow: 0rem 0.3rem 0.6rem #efefef;
+}
+.avatar{
+    width:5rem;
+    height:5rem;
+    border-radius: 2.5rem;
+    display: inline-block
+}
+.info{
+    width:12rem;
+    height:8rem;
+    text-align: left;
+    display: inline-block;
+    margin-left: 1rem;
+}
+.avatar image{
+    width:5rem;
+    height:5rem;
+    border-radius: 2.5rem;
+}
+.info text{
+    display: block;
+    color: #999;
+}
+.info .name{
+    color: #000;
+    font-weight: 600;
+}
+.group{
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+}
+.group .item{
+    display: inline-block;
+    width:50%;
+    text-align: center;
+    color: #efefef;
+}
+.group .active{
+    color: #000;
+}
