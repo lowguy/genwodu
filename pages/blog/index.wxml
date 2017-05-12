@@ -1,33 +1,39 @@
 <!--pages/blog/index.wxml-->
 <view class="container">
+<loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>  
     <view class="section">
-        <view class="item" wx:for="{{blog}}" wx:key="index">
-            <view class="content">
-                <view class="user-info">
-                    <view class="left">
-                        <view class="avatar" bindtap="caidan" data-id="{{item.id}}">
-                            <image src="{{item.thumb}}" ></image>
+    <scroll-view scroll-y="true" style="height: {{scrollHeight}}px" scroll-top="{{scrollTop}}" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-into-view="{{toView}}">
+            <view class="item" wx:for="{{blog}}" wx:key="index" data-id="{{item.id}}" bindtap="detail">
+                <view class="content">
+                    <view class="user-info">
+                        <view class="left">
+                            <view class="avatar">
+                                <image src="{{item.thumb}}" ></image>
+                            </view>
+                            <view class="user">
+                                <text class="name">{{item.author}}</text>
+                                <text class="time">{{item.create_time}}</text>
+                            </view>
                         </view>
-                        <view class="user">
-                            <text class="name">{{item.author}}</text>
-                            <text class="time">{{item.create_time}}</text>
+                        <!--<view class="right" bindtap="menus" data-title="{{item.title}}" data-id="{{item.id}}">
+                            <image src="../../image/icon/action.png"></image>
+                        </view>-->
+                    </view>
+                    <view class="img"><image src="{{item.thumb}}"></image></view>
+                    <view class="brief">{{item.brief}}</view>
+                    <view class="action">
+                        <view class="left">
+                            
                         </view>
-                    </view>
-                    <view class="right">
-                        <image src="../../image/icon/action.png"></image>
-                    </view>
-                </view>
-                <view class="img"><image src="{{item.thumb}}"></image></view>
-                <view class="brief">{{item.brief}}</view>
-                <view class="action">
-                    <view class="left">
-                        
-                    </view>
-                    <view class="right">
-                        <image src="../../image/icon/like.png"></image>
+                        <view class="right">
+                            <image src="../../image/icon/like.png"></image>
+                        </view>
                     </view>
                 </view>
             </view>
-        </view>
+            <view wx:if="{{hasmore}}"> 没有更多了</view>
+        </scroll-view>
     </view>
 </view>
