@@ -1,10 +1,5 @@
 <!--index.wxml-->
 <view class="section">
-  <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view id="green" class="scroll-view-item bc_green"></view>
-    <view id="red"  class="scroll-view-item bc_red"></view>
-    <view id="yellow" class="scroll-view-item bc_yellow"></view>
-    <view id="blue" class="scroll-view-item bc_blue"></view>
-  </scroll-view>
+  <map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}"  markers="{{markers}}" bindmarkertap="markertap" controls="{{controls}}" bindcontroltap="controltap" show-location style="height:{{mapheight}}px;width:100%;" scale="16"/>
 </view>
 

@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/blog/index",
+    "pages/publish/index",
     "pages/my/index",
     "pages/logs/logs"
   ],

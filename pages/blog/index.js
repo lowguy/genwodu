@@ -5,7 +5,7 @@ Page({
     apiUrl:'https://890vip.cn',
     scrollTop: 100,
     scrollHeight:0,
-    hidden:true,
+    hidden:false,
     refresh:false,
     hasmore:false,
     shareTitle:'blogs.890vip.cn',
@@ -70,7 +70,6 @@ Page({
         method:'post',
         data:{page:page},
         success: function(res) {
-          console.log(res.data.result.length);
           if(!res.data.result.length){
               that.setData({
                   hasmore:true
@@ -93,17 +92,5 @@ Page({
         }
     });
     that.getData(that.data.page)
-  },
-  onReady:function(){
-    // 页面渲染完成
-  },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
   }
 })

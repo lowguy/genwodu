@@ -1,5 +1,1 @@
 /**index.wxss**/
-.bc_green{height: 100px;background-color: green;}
-.bc_red{height: 100px;background-color: red;}
-.bc_yellow{height: 100px;background-color: yellow;}
-.bc_blue{height: 100px;background-color: blue;}

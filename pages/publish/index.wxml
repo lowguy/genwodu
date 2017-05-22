@@ -1,0 +1,18 @@
+<!--pages/publish/index.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="section">
+    <view class="section__title" style="display: inline-block;float: left;width: 24%;height: 30px;line-height: 30px;text-align: left;font-size:16px;">活动名称</view>
+    <input name="input" placeholder="请输入活动名称" bindinput="bindKeyInput" style="display:inline-block;width:75%;height:30px;text-align:left;font-size:16px;" />
+  </view>
+  <view class="section">
+    <view class="section__title" style="display: inline-block;float: left;width: 24%;height: 30px;line-height: 30px;text-align: left;font-size:16px;">活动简介</view>
+    <textarea bindblur="bindTextAreaBlur" placeholder="活动简介" style="height:60px;display:inline-block;width:75%;text-align:left;font-size:16px;"/>
+  </view>
+  <view class="section">
+    <view class="section__title" style="display: inline-block;float: left;width: 24%;height: 30px;line-height: 30px;text-align: left;font-size:16px;">活动地址</view>
+    <input name="input" bindfocus="setAddress" placeholder="请选择活动地址" style="display:inline-block;width:75%;height:30px;text-align:left;font-size:16px;" value="{{address}}"/>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">发布</button>
+  </view>
+</form>
